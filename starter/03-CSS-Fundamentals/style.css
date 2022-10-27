@@ -1,9 +1,10 @@
-h1,
-h2,
-h3,
-h4,
-p,
-li {
+* {
+  /* border-top: 10px solid #c22d2d; */
+  margin: 0;
+  padding: 0;
+}
+
+body {
   font-family: sans-serif;
   color: #444444;
 }
@@ -22,10 +23,12 @@ h1 {
 
 h2 {
   font-size: 40px;
+  margin-bottom: 50px;
 }
 
 h3 {
   font-size: 30px;
+  margin-bottom: 30px;
 }
 
 h4 {
@@ -36,10 +39,17 @@ h4 {
 p {
   font-size: 22px;
   line-height: 1.5;
+  margin-bottom: 15px;
 }
 
 li {
   font-size: 20px;
+}
+
+ul,
+ol {
+  margin-left: 50px;
+  margin-bottom: 20px;
 }
 
 /* footer p {
@@ -66,16 +76,32 @@ li {
 
 .main-header {
   background-color: #f6f6f6;
+  padding: 20px 40px;
+  margin-bottom: 60px;
+  height: 80px;
+}
+
+.container {
+  width: 800px;
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin: 0 auto;
 }
 
 aside {
   background-origin: #f7f7f7;
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
+  padding: 50px 0;
+  width: 500px;
 }
 
 body {
-  background-color: #cbd4da;
+  /* background-color: #cbd4da; */
+}
+
+article {
+  margin-bottom: 60px;
 }
 
 li:first-child {
@@ -85,6 +111,11 @@ li:first-child {
 li:last-child {
   font-style: italic;
 }
+
+li:last-child {
+  margin-bottom: 0;
+}
+
 /* 
 li:nth-child(2) {
   color: rgb(167, 21, 21);
@@ -114,4 +145,9 @@ a:hover {
 a:active {
   background-color: cadetblue;
   font-style: italic;
+}
+
+.post-image {
+  width: 100%;
+  height: auto;
 }
