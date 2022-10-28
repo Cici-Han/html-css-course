@@ -1,7 +1,7 @@
 * {
-  /* border-top: 10px solid #1098ad; */
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 /* PAGE SECTIONS */
@@ -14,14 +14,14 @@ body {
 }
 
 .container {
-  width: 800px;
+  width: 1200px;
   /* margin-left: auto;
   margin-right: auto; */
   margin: 0 auto;
 }
 
 .main-header {
-  background-color: #f7f7f7;
+  background-color: #a8c0c6;
   /* padding: 20px;
   padding-left: 40px;
   padding-right: 40px; */
@@ -82,6 +82,7 @@ h4 {
   font-size: 20px;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 30px;
 }
 
 p {
@@ -134,6 +135,7 @@ li:last-child {
 
 .related {
   list-style: none;
+  margin-left: 0;
 }
 
 body {
@@ -265,3 +267,51 @@ footer p {
 nav p {
   font-size: 18px;
 } */
+
+.author-img {
+  float: left;
+  margin-bottom: 20px;
+}
+
+.author {
+  /* padding-left: 10px; */
+  float: left;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+h1 {
+  float: left;
+}
+
+nav {
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+article {
+  /* background-color: greenyellow; */
+  width: 825px;
+  float: left;
+}
+
+aside {
+  /* background-color: rebeccapurple; */
+  width: 300px;
+  float: right;
+  padding: 50px;
+}
+
+footer {
+  /* background-color: darkgoldenrod; */
+  clear: both;
+}
