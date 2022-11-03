@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>App Layout</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: sans-serif;
+        color: #444;
+        font-size: 24px;
+        height: 100vh;
+        text-align: center;
+        font-weight: bold;
+
+        display: grid;
+        grid-template-columns: 80px 400px 1fr 250px;
+        grid-template-rows: 80px 1fr;
+      }
+
+      nav,
+      section,
+      main,
+      aside {
+        padding-top: 24px;
+      }
+
+      nav {
+        background-color: antiquewhite;
+        grid-row: 1/-1;
+      }
+
+      menu {
+        background-color: darkcyan;
+        color: white;
+        grid-column: 2/-1;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 0 40px;
+      }
+
+      button {
+        font-size: 16px;
+        background-color: rgb(13, 118, 118);
+        border: none;
+        cursor: pointer;
+        color: white;
+        padding: 8px 12px;
+        display: inline-block;
+      }
+
+      section {
+        background-color: olivedrab;
+      }
+
+      aside {
+        background-color: darkslateblue;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>Nav</nav>
+    <menu>
+      <button>New</button>
+      <button>Reply</button>
+      <button>Forward</button>
+      <button>Mark nuread</button>
+      <button>Trash</button>
+    </menu>
+    <section>Inbox</section>
+    <main>Email view</main>
+    <aside>Additional info</aside>
+  </body>
+</html>
