@@ -33,14 +33,16 @@
       }
 
       nav {
-        background-color: antiquewhite;
+        background-color: rgb(78, 77, 76);
         grid-row: 1/-1;
+        color: aliceblue;
       }
 
       menu {
         background-color: darkcyan;
         color: white;
         grid-column: 2/-1;
+
         display: flex;
         align-items: center;
         gap: 12px;
@@ -56,13 +58,34 @@
         padding: 8px 12px;
         display: inline-block;
       }
+      button:last-child {
+        background-color: rgb(225, 76, 99);
+        margin-left: auto;
+      }
 
       section {
-        background-color: olivedrab;
+        background-color: rgb(192, 214, 149);
+        padding: 40px;
+
+        overflow: scroll;
+
+        display: flex;
+        gap: 40px;
+        flex-direction: column;
+      }
+
+      .email {
+        height: 96px;
+        background-color: rgb(154, 171, 122);
+        flex-shrink: 0;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
 
       aside {
-        background-color: darkslateblue;
+        background-color: rgb(152, 141, 219);
         color: white;
       }
     </style>
@@ -76,7 +99,18 @@
       <button>Mark nuread</button>
       <button>Trash</button>
     </menu>
-    <section>Inbox</section>
+    <section>
+      <div class="email">Email 1</div>
+      <div class="email">Email 2</div>
+      <div class="email">Email 3</div>
+      <div class="email">Email 4</div>
+      <div class="email">Email 5</div>
+      <div class="email">Email 6</div>
+      <div class="email">Email 7</div>
+      <div class="email">Email 8</div>
+      <div class="email">Email 9</div>
+      <div class="email">Email 10</div>
+    </section>
     <main>Email view</main>
     <aside>Additional info</aside>
   </body>
